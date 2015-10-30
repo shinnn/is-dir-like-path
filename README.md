@@ -52,7 +52,7 @@ Return: `Boolean`
 Always interact in a [posix](https://www.opengroup.org/austin/papers/posix_faq.html) compatible way.
 
 ```javascript
-isDirLikePath('dir\\'); //=> false
+isDirLikePath.posix('dir\\'); //=> false
 ```
 
 ### isDirLikePath.win32(*str*)
@@ -61,7 +61,7 @@ isDirLikePath('dir\\'); //=> false
 Return: `Boolean`
 
 ```javascript
-isDirLikePath('dir\\'); //=> true
+isDirLikePath.win32('dir\\'); //=> true
 ```
 
 Always interact in a [win32](https://msdn.microsoft.com/library/cc433218) compatible way.
