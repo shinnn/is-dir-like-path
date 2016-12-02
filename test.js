@@ -1,4 +1,4 @@
-'use strong';
+'use strict';
 
 const path = require('path');
 
@@ -29,8 +29,8 @@ tap.test('isDirPathPath', t => {
   );
 
   t.throws(
-    () => isDirLikePath(1),
-    new TypeError('1 is not a string. Expected a file path.'),
+    () => isDirLikePath(Buffer.from('a')),
+    new TypeError('<Buffer 61> is not a string. Expected a file path.'),
     'should throw a type error when it takes a non-string argument.'
   );
 

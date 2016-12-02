@@ -4,11 +4,12 @@
 */
 'use strict';
 
+const inspect = require('util').inspect;
 const path = require('path');
 
 function isDirLikePathCore(filePath, pathObj) {
   if (typeof filePath !== 'string') {
-    throw new TypeError(`${filePath} is not a string. Expected a file path.`);
+    throw new TypeError(`${inspect(filePath)} is not a string. Expected a file path.`);
   }
 
   return pathObj.normalize(filePath).endsWith(pathObj.sep);
