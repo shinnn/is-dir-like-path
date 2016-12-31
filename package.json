@@ -5,7 +5,7 @@
   "repository": "shinnn/is-dir-like-path",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "pretest": "eslint --config @shinnn/node index.js test.js",
+    "pretest": "eslint --fix --format=codeframe index.js test.js",
     "test": "tap --coverage --reporter=spec test.js",
     "test-only": "tap --reporter=spec test.js"
   },
@@ -30,8 +30,11 @@
   ],
   "devDependencies": {
     "@shinnn/eslint-config-node": "^3.0.0",
-    "eslint": "^3.8.0",
-    "nyc": "^8.3.1",
-    "tap": "^7.1.2"
+    "eslint": "^3.11.2",
+    "nyc": "^10.0.0",
+    "tap": "^8.0.1"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn/node"
   }
 }
