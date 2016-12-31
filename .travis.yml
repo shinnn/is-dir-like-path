@@ -1,3 +1,4 @@
+dist: trusty
 git:
   depth: 1
 branches:
@@ -7,5 +8,3 @@ node_js: node
 after_script:
   - npm install coveralls 
   - ./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls
-notifications:
-  email: false
