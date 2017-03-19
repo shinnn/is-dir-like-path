@@ -30,9 +30,9 @@
   ],
   "devDependencies": {
     "@shinnn/eslint-config-node": "^3.0.0",
-    "eslint": "^3.11.2",
-    "nyc": "^10.0.0",
-    "tap": "^8.0.1"
+    "eslint": "^3.18.0",
+    "nyc": "^10.1.2",
+    "tap": "^10.3.0"
   },
   "eslintConfig": {
     "extends": "@shinnn/node"
