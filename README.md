@@ -4,7 +4,6 @@
 [![Build Status](https://travis-ci.org/shinnn/is-dir-like-path.svg?branch=master)](https://travis-ci.org/shinnn/is-dir-like-path)
 [![Build status](https://ci.appveyor.com/api/projects/status/19440q8twr9rt808/branch/master?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/is-dir-like-path/branch/master)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/is-dir-like-path.svg)](https://coveralls.io/r/shinnn/is-dir-like-path)
-[![devDependencies Status](https://david-dm.org/shinnn/is-dir-like-path/dev-status.svg)](https://david-dm.org/shinnn/is-dir-like-path?type=dev)
 
 Check if a given string looks like a directory path
 
@@ -68,6 +67,6 @@ Always interact in a [win32](https://msdn.microsoft.com/library/cc433218) compat
 
 ## License
 
-Copyright (c) 2015 - 2016 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2015 - 2017 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).

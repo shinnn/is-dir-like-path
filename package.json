@@ -28,6 +28,9 @@
     "win32",
     "match"
   ],
+  "dependencies": {
+    "inspect-with-kind": "^1.0.0"
+  },
   "devDependencies": {
     "@shinnn/eslint-config-node": "^3.0.0",
     "eslint": "^3.18.0",

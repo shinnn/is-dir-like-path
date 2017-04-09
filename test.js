@@ -30,13 +30,13 @@ tap.test('isDirPathPath', t => {
 
   t.throws(
     () => isDirLikePath(Buffer.from('a')),
-    new TypeError('<Buffer 61> is not a string. Expected a file path.'),
+    new TypeError('Expected a file path, but got <Buffer 61>.'),
     'should throw a type error when it takes a non-string argument.'
   );
 
   t.throws(
     () => isDirLikePath(),
-    new TypeError('undefined is not a string. Expected a file path.'),
+    new TypeError('Expected a file path, but got undefined.'),
     'should throw a type error when it takes no arguments.'
   );
 });
