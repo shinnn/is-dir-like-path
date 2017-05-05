@@ -9,7 +9,7 @@
     "test": "tap --coverage --reporter=spec test.js",
     "test-only": "tap --reporter=spec test.js"
   },
-  "license": "MIT",
+  "license": "CC0-1.0",
   "files": [
     "index.js"
   ],

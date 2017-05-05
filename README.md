@@ -30,8 +30,8 @@ const isDirLikePath = require('is-dir-like-path');
 
 ### isDirLikePath(*str*)
 
-*str*: `String` (path)  
-Return: `Boolean`
+*str*: `string` (path)  
+Return: `boolean`
 
 It returns `true` if the last character of a given string is equal to [`path.sep`](https://nodejs.org/api/path.html#path_path_sep).
 
@@ -45,8 +45,8 @@ isDirLikePath('dir\\'); //=> true
 
 ### isDirLikePath.posix(*str*)
 
-*str*: `String` (path)  
-Return: `Boolean`
+*str*: `string` (path)  
+Return: `boolean`
 
 Always interact in a [posix](https://www.opengroup.org/austin/papers/posix_faq.html) compatible way.
 
@@ -56,8 +56,8 @@ isDirLikePath.posix('dir\\'); //=> false
 
 ### isDirLikePath.win32(*str*)
 
-*str*: `String` (path)  
-Return: `Boolean`
+*str*: `string` (path)  
+Return: `boolean`
 
 ```javascript
 isDirLikePath.win32('dir\\'); //=> true
@@ -67,6 +67,4 @@ Always interact in a [win32](https://msdn.microsoft.com/library/cc433218) compat
 
 ## License
 
-Copyright (c) 2015 - 2017 [Shinnosuke Watanabe](https://github.com/shinnn)
-
-Licensed under [the MIT License](./LICENSE).
+[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed)
