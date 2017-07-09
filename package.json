@@ -29,13 +29,13 @@
     "match"
   ],
   "dependencies": {
-    "inspect-with-kind": "^1.0.0"
+    "inspect-with-kind": "^1.0.2"
   },
   "devDependencies": {
-    "@shinnn/eslint-config-node": "^3.0.0",
-    "eslint": "^3.19.0",
-    "nyc": "^10.2.0",
-    "tap": "^10.3.2"
+    "@shinnn/eslint-config-node": "^4.0.0",
+    "eslint": "^4.2.0",
+    "nyc": "^11.0.3",
+    "tap": "^10.7.0"
   },
   "eslintConfig": {
     "extends": "@shinnn/node"
