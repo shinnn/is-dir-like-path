@@ -1,6 +1,6 @@
 {
   "name": "is-dir-like-path",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Check if a given string looks like a directory path",
   "repository": "shinnn/is-dir-like-path",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
@@ -32,8 +32,9 @@
     "inspect-with-kind": "^1.0.2"
   },
   "devDependencies": {
-    "@shinnn/eslint-config-node": "^4.0.0",
+    "@shinnn/eslint-config-node": "^4.0.1",
     "eslint": "^4.2.0",
+    "eslint-plugin-node": "^5.1.0",
     "nyc": "^11.0.3",
     "tap": "^10.7.0"
   },
