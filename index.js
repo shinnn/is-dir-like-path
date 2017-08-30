@@ -1,19 +1,15 @@
-/*!
- * is-dir-like-path | MIT (c) Shinnosuke Watanabe
- * https://github.com/shinnn/is-dir-like-path
-*/
 'use strict';
 
 const path = require('path');
 
 const inspectWithKind = require('inspect-with-kind');
 
-function isDirLikePathCore(filePath, pathObj) {
+function isDirLikePathCore(filePath, {normalize, sep}) {
   if (typeof filePath !== 'string') {
     throw new TypeError(`Expected a file path, but got ${inspectWithKind(filePath)}.`);
   }
 
-  return pathObj.normalize(filePath).endsWith(pathObj.sep);
+  return normalize(filePath).endsWith(sep);
 }
 
 module.exports = function isDirLikePath(filePath) {
