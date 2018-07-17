@@ -1,44 +1,43 @@
 {
-  "name": "is-dir-like-path",
-  "version": "2.0.0-0",
-  "description": "Check if a given string looks like a directory path",
-  "repository": "shinnn/is-dir-like-path",
-  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-  "scripts": {
-    "pretest": "eslint --fix --format=codeframe index.js test.js",
-    "test": "tap --coverage --reporter=spec test.js",
-    "test-only": "tap --reporter=spec test.js"
-  },
-  "license": "CC0-1.0",
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "check",
-    "checker",
-    "if",
-    "boolean",
-    "dir",
-    "directory",
-    "dirname",
-    "name",
-    "path",
-    "string",
-    "posix",
-    "win32",
-    "match"
-  ],
-  "dependencies": {
-    "inspect-with-kind": "^1.0.2"
-  },
-  "devDependencies": {
-    "@shinnn/eslint-config-node": "^4.0.1",
-    "eslint": "^4.2.0",
-    "eslint-plugin-node": "^5.1.0",
-    "nyc": "^11.0.3",
-    "tap": "^10.7.0"
-  },
-  "eslintConfig": {
-    "extends": "@shinnn/node"
-  }
+	"name": "is-dir-like-path",
+	"version": "2.0.0-0",
+	"description": "Check if a given string looks like a directory path",
+	"repository": "shinnn/is-dir-like-path",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "CC0-1.0",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "tap --coverage --reporter=spec test.js",
+		"test-only": "tap --reporter=spec test.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"check",
+		"checker",
+		"if",
+		"boolean",
+		"dir",
+		"directory",
+		"dirname",
+		"name",
+		"path",
+		"string",
+		"posix",
+		"win32",
+		"match"
+	],
+	"dependencies": {
+		"inspect-with-kind": "^1.0.4"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config-node": "^6.0.0",
+		"eslint": "^5.1.0",
+		"nyc": "^12.0.2",
+		"tap": "^12.0.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn/node"
+	}
 }
