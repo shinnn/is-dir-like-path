@@ -7,8 +7,7 @@
 	"license": "CC0-1.0",
 	"scripts": {
 		"pretest": "eslint .",
-		"test": "tap --coverage --reporter=spec test.js",
-		"test-only": "tap --reporter=spec test.js"
+		"test": "tap --coverage --reporter=spec test.js"
 	},
 	"files": [
 		"index.js"
