@@ -4,7 +4,15 @@ const path = require('path');
 
 const inspectWithKind = require('inspect-with-kind');
 
-function isDirLikePathCore(filePath, {normalize, sep}) {
+function isDirLikePathCore(...args) {
+	const argLen = args.length;
+
+	if (argLen !== 2) {
+		throw new RangeError(`Expected 1 argument (<string>), but got ${argLen - 1 || 'no'} arguments.`);
+	}
+
+	const [filePath, {normalize, sep}] = args;
+
 	if (typeof filePath !== 'string') {
 		throw new TypeError(`Expected a file path, but got ${inspectWithKind(filePath)}.`);
 	}
@@ -12,14 +20,14 @@ function isDirLikePathCore(filePath, {normalize, sep}) {
 	return normalize(filePath).endsWith(sep);
 }
 
-module.exports = function isDirLikePath(filePath) {
-	return isDirLikePathCore(filePath, path);
+module.exports = function isDirLikePath(...args) {
+	return isDirLikePathCore(...args, path);
 };
 
-module.exports.posix = function isDirLikePathPosix(filePath) {
-	return isDirLikePathCore(filePath, path.posix);
+module.exports.posix = function isDirLikePathPosix(...args) {
+	return isDirLikePathCore(...args, path.posix);
 };
 
-module.exports.win32 = function isDirLikePathWin32(filePath) {
-	return isDirLikePathCore(filePath, path.win32);
+module.exports.win32 = function isDirLikePathWin32(...args) {
+	return isDirLikePathCore(...args, path.win32);
 };

@@ -32,7 +32,13 @@ tap.test('isDirPathPath', t => {
 
 	t.throws(
 		() => isDirLikePath(),
-		new TypeError('Expected a file path, but got undefined.'),
+		new RangeError('Expected 1 argument (<string>), but got no arguments.'),
+		'should throw a type error when it takes no arguments.'
+	);
+
+	t.throws(
+		() => isDirLikePath('', ''),
+		new RangeError('Expected 1 argument (<string>), but got 2 arguments.'),
 		'should throw a type error when it takes no arguments.'
 	);
 
