@@ -1,11 +1,11 @@
 # is-dir-like-path
 
-[![NPM version](https://img.shields.io/npm/v/is-dir-like-path.svg)](https://www.npmjs.com/package/is-dir-like-path)
+[![npm version](https://img.shields.io/npm/v/is-dir-like-path.svg)](https://www.npmjs.com/package/is-dir-like-path)
 [![Build Status](https://travis-ci.org/shinnn/is-dir-like-path.svg?branch=master)](https://travis-ci.org/shinnn/is-dir-like-path)
 [![Build status](https://ci.appveyor.com/api/projects/status/19440q8twr9rt808/branch/master?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/is-dir-like-path/branch/master)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/is-dir-like-path.svg)](https://coveralls.io/r/shinnn/is-dir-like-path)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/is-dir-like-path.svg)](https://coveralls.io/github/shinnn/is-dir-like-path)
 
-Check if a given string looks like a directory path
+Check if a given `string` looks like a directory path
 
 ```javascript
 const isDirLikePath = require('is-dir-like-path');
@@ -16,7 +16,7 @@ isDirLikePath('foo/'); //=> true
 
 ## Installation
 
-[Use npm.](https://docs.npmjs.com/cli/install)
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
 
 ```
 npm install is-dir-like-path
@@ -67,4 +67,4 @@ Always interact in a [win32](https://msdn.microsoft.com/library/cc433218) compat
 
 ## License
 
-[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed)
+[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe

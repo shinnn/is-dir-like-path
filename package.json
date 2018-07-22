@@ -4,7 +4,7 @@
 	"description": "Check if a given string looks like a directory path",
 	"repository": "shinnn/is-dir-like-path",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
-	"license": "CC0-1.0",
+	"license": "ISC",
 	"scripts": {
 		"pretest": "eslint .",
 		"test": "tap --coverage --reporter=spec test.js"
