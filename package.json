@@ -1,6 +1,6 @@
 {
 	"name": "is-dir-like-path",
-	"version": "2.0.0-1",
+	"version": "2.0.0",
 	"description": "Check if a given string looks like a directory path",
 	"repository": "shinnn/is-dir-like-path",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
