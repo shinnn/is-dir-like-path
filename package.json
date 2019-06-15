@@ -3,7 +3,7 @@
 	"version": "2.0.0",
 	"description": "Check if a given string looks like a directory path",
 	"repository": "shinnn/is-dir-like-path",
-	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"author": "Watanabe Shinnosuke (https://github.com/shinnn)",
 	"license": "ISC",
 	"scripts": {
 		"pretest": "eslint .",
